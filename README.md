@@ -2,40 +2,36 @@
 
 ## Project setup
 ```
-yarn install
-```
-### Compiles and hot-reloads for development with mock apis
-```
-yarn dev
+npm install
 ```
 
 ### Compiles and hot-reloads for development with proxy
 ```
-yarn dev-nomock
+npm run dev-nomock
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build:prod
+npm run build:prod
 ```
 
 ### Compiles and minifies for staging
 ```
-yarn build:stage
+npm run build:stage
 ```
 ### Compiles and minifies for staging and preview with proxy apis
 ```
-yarn preview
+npm run preview
 ```
 
 ### Run your unit tests
 ```
-yarn test:unit
+npm run test:unit
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+npm run lint
 ```
 
 ### Customize configuration
@@ -45,3 +41,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### for testing ref:
 https://vue-test-utils.vuejs.org/v2/guide/vuex.html#testing-with-a-real-vuex-store
+
+
+
+## For your testing
+```
+npm install
+```
+```
+npm run dev-nomock
+```
