@@ -10,7 +10,7 @@ const initialParam = {
 export default {
   name: 'ListPage',
   components: { Product, Filter },
-  data() {
+  data () {
     return {
       skip: 0
     }
@@ -19,11 +19,11 @@ export default {
     ...mapGetters('search', ['fetchData', 'products'])
   },
   mounted () {
-    this.getData(initialParam)
+    this.getData({ ...initialParam, ...this.$route.query })
     this.initialize()
   },
   watch: {
-    '$route.params': {
+    '$route.query': {
       immediate: true,
       handler (to, from) {
         this.getData({ ...this.$route.query, ...initialParam })
